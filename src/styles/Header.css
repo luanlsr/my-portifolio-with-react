@@ -1,12 +1,18 @@
 .header-container {
   align-items: center;
-  background-color: #111;
+  background-color: transparent;
+  /* background-color: #111; */
   color: white;
   display: flex;
   justify-content: space-around;
   height: 126px;
   padding: 26px;
+  position: fixed;
   width: 100%;
+}
+
+.header-container.active {
+  background-color: #111;
 }
 
 .logo {
