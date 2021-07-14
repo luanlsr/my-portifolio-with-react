@@ -1,12 +1,29 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import logoName from '../assets/images/logoN.png';
 import logotipo from '../assets/images/logotype.png';
 
 import '../styles/Header.css';
 
 export default function Header() {
+const [showHeader, setShowHeader] = useState(false);
+
+const changeBackground = () => {
+  console.log(window.scrollY);
+  if(window.scrollY >= 80) {
+    setShowHeader(true)
+  } else {
+    setShowHeader(false)
+  }
+}
+
+// useEffect(() => {
+//   changeBackground()
+// }, [])
+
+window.addEventListener('scroll' ,changeBackground)
+
   return (
-    <header className="header-container active">
+    <header className={showHeader ? 'header-container active' : 'header-container'}>
       <div className="logo">
         <div>
           <img src={logoName} alt="logoname" />

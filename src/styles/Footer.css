@@ -3,6 +3,7 @@
   background-color: #111;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   height: 100px;
   justify-content: center;
   width: 100%;

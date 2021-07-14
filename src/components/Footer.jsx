@@ -4,7 +4,8 @@ import '../styles/Footer.css';
 export default function Footer() {
   return (
     <footer className="footer">
-      <p>Created By Luan da Silva Ramalho | &#169; 2021 All rights reserved.</p>
+      <p>Created By Luan da Silva Ramalho | &#169; 2021</p>
+      <p>&nbsp; All rights reserved.</p>
     </footer>
   )
 }

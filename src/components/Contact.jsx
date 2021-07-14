@@ -4,7 +4,9 @@ import '../styles/Contact.css';
 export default function Contact() {
   return (
     <div className="contact" id="contact">
-      <h1>Contato</h1>
+      <div className="contact-content">
+        <h1>Contato</h1>
+      </div>
     </div>
   )
 }

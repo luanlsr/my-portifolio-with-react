@@ -1,10 +1,24 @@
 .about-container {
-  background-color: #226665;
   height: 100vh;
   width: 100%;
 }
 
 .about-container h1 {
   color: #111;
-  margin-top: 100px;
+}
+
+.about-content {
+  padding: 160px;
+}
+
+.about-content h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+}
+
+.about-content p {
+  margin: 20px 0 0;
+  padding: 0;
+  font-size: 1.2em;
 }
