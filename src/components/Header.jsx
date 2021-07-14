@@ -26,7 +26,7 @@ window.addEventListener('scroll' ,changeBackground)
     <header className={showHeader ? 'header-container active' : 'header-container'}>
       <div className="logo">
         <div>
-          <img src={logoName} alt="logoname" />
+          <img className="logoName" src={logoName} alt="logoname" />
           <img className="logoTipo" src={logotipo} alt="logotipo" />
         </div>
         <p>Desenvolvimento Web FullStack</p>

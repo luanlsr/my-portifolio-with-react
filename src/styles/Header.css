@@ -5,10 +5,10 @@
   color: white;
   display: flex;
   justify-content: space-around;
-  height: 126px;
+  height: 136px;
   padding: 26px;
   position: fixed;
-  transition: ease-in-out 0.5s;
+  transition: all 0.5s ease;
   width: 100%;
   z-index: 999;
 }
@@ -16,11 +16,16 @@
 .header-container.active {
   background-color: #111;
   color: white;
+  height: 110px ;
   opacity: 0.9;
 }
 
 .header-container.active >.menu a:hover {
   color: rgb(127, 255, 212);
+}
+
+.header-container.active > .logo {
+  height: 120px;
 }
 
 .header-container.active > .menu a {
