@@ -1,11 +1,18 @@
 .header-container {
   align-items: center;
   background-color: #111;
+  color: white;
   display: flex;
   justify-content: space-around;
   height: 126px;
   padding: 26px;
   width: 100%;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .logoTipo {
@@ -33,5 +40,5 @@
 }
 
 .menu li:hover{
-  color: aquamarine;
+  color: rgb(127, 255, 212);
 }

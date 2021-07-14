@@ -7,10 +7,13 @@ import '../styles/Header.css';
 export default function Header() {
   return (
     <header className="header-container">
-      <span>
-        <img src={logoName} alt="logoname" />
-        <img className="logoTipo" src={logotipo} alt="logotipo" />
-        </span>
+      <div className="logo">
+        <div>
+          <img src={logoName} alt="logoname" />
+          <img className="logoTipo" src={logotipo} alt="logotipo" />
+        </div>
+        <p>Desenvolvimento Web FullStack</p>
+      </div>
       <ul className="menu">
         <li>Home</li>
         <li>Sobre mim</li>
