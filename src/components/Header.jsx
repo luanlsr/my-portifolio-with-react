@@ -6,7 +6,7 @@ import '../styles/Header.css';
 
 export default function Header() {
   return (
-    <header className="header-container">
+    <header className="header-container active">
       <div className="logo">
         <div>
           <img src={logoName} alt="logoname" />
@@ -15,12 +15,11 @@ export default function Header() {
         <p>Desenvolvimento Web FullStack</p>
       </div>
       <ul className="menu">
-        <li>Home</li>
-        <li>Sobre mim</li>
-        <li>Skills</li>
-        <li>Serviços</li>
-        <li>Contato</li>
-
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-me">Sobre mim</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
       </ul>
     </header>
   )
