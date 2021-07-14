@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import logoName from '../assets/images/logoN.png';
 import logotipo from '../assets/images/logotype.png';
 
@@ -8,7 +8,6 @@ export default function Header() {
 const [showHeader, setShowHeader] = useState(false);
 
 const changeBackground = () => {
-  console.log(window.scrollY);
   if(window.scrollY >= 80) {
     setShowHeader(true)
   } else {
