@@ -1,7 +1,7 @@
 .contact {
   background-color: #4E15BE;
   color: white;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
 }
 
@@ -57,4 +57,84 @@
 
 .instagram:hover {
   color: aquamarine;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  align-items: center;
+  background-color: transparent;
+  border: 5px solid aquamarine;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  height: 60px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  width: 500px;
+}
+
+.email {
+  align-items: center;
+  background-color: transparent;
+  border: 5px solid aquamarine;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  height: 60px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  width: 500px;
+}
+
+.subject {
+  align-items: center;
+  background-color: transparent;
+  border: 5px solid aquamarine;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  height: 60px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  width: 500px;
+}
+
+.message {
+  align-items: center;
+  background-color: transparent;
+  border: 5px solid aquamarine;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  height: 100px;
+  margin-bottom: 16px;
+  padding: 6px 16px;
+  width: 500px;
+}
+
+.submit {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 8px;
+  color: #21717A;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: 600;
+  height: 60px;
+  margin-bottom: 16px;
+  transition: all ease-in-out 0.2s;
+  width: 500px;
+}
+
+.submit:hover {
+  background-color: #21717A;
+  color: white;
 }

@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {GrInstagram} from 'react-icons/gr'
 import emailjs from 'emailjs-com';
 import '../styles/Contact.css';
 
+const Result = () => {
+  return (
+    <p>Sua mensagem foi enviada! Obrigado pelo contato.</p>
+  )
+}
+
 export default function Contact() {
+  const [sentEmail, setSendEmail] = useState(false)
 
   function sendEmail(e) {
     e.preventDefault();
@@ -16,6 +23,7 @@ export default function Contact() {
           console.log(error.text);
       });
       e.target.reset()
+      setSendEmail(true)
   }
 
   return (
@@ -31,16 +39,17 @@ export default function Contact() {
         </article>
         <form className="contact-form" onSubmit={sendEmail}>
           <input type="hidden" name="contact_number" />
-          <label>Nome</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Assunto</label>
-          <input type="text" name="subject" />
-          <label>Messagem</label>
-          <textarea name="message" />
-          <input type="submit" value="Enviar" />
+          <label className="label-name" >Nome</label>
+          <input className="name" type="text" name="user_name" />
+          <label className="label-email" >Email</label>
+          <input className="email" type="email" name="user_email" />
+          <label className="label-subject" >Assunto</label>
+          <input className="subject" type="text" name="subject" />
+          <label className="label-message" >Messagem</label>
+          <textarea className="message"  name="message" />
+          <input className="submit" type="submit" value="Enviar" />
         </form>
+        {sentEmail ? <Result /> : null}
       </section>
     </div>
   )
