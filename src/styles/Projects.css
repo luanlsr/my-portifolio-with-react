@@ -14,7 +14,8 @@
 }
 
 .projects-content p {
+  font-size: 1.2em;
   margin: 20px 0 0;
   padding: 0;
-  font-size: 1.2em;
+  text-align: justify;
 }
