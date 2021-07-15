@@ -24,7 +24,7 @@
   color: rgb(127, 255, 212);
 }
 
-.header-container.active > .logo {
+.header-container.active > .logo-container {
   height: 120px;
 }
 
@@ -33,13 +33,13 @@
   color: white;
 }
 
-.logo {
+.logo-container {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-.logo p {
+.logo-container p {
   text-shadow: 2px 2px 10px black;
 }
 
@@ -71,4 +71,83 @@
 
 .menu a:hover{
   color: rgb(127, 255, 212);
+}
+
+#menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+#menu-overlay.active {
+  transform: scale(1);
+}
+
+
+#menu-overlay ul {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  display: block;
+  margin-top: 100px;
+}
+
+#menu-overlay ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 3em;
+  color: #fff;
+  padding: 16px 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+#menu-overlay ul li a:hover {
+    color: aquamarine;
+}
+
+#toggleIcon {
+  position: fixed;
+  display: none;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  /* background-color: #ff0; */
+  z-index: 1;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .logo-container {
+    position: absolute;
+    left: 30px;
+  }
+
+  .logoName {
+    width: 230px;
+  }
+
+  .logoTipo {
+    width: 50px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  #toggleIcon {
+    display: block;
+  }
 }
