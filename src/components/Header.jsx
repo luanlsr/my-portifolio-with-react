@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import logoName from '../assets/images/logoN.png';
 import logotipo from '../assets/images/logotype.png';
+import {AiOutlineClose} from 'react-icons/ai'
 import {FaBars} from 'react-icons/fa'
-import '../styles/Header.css';
+import '../styles/Header.scss';
 
 export default function Header() {
 const [showHeader, setShowHeader] = useState(false);
@@ -42,7 +43,9 @@ window.addEventListener('scroll' ,changeBackground)
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#contact">Contato</a></li>
       </ul>
+      <AiOutlineClose id="toggleIcon" onClick={menuTogle}/>
       <FaBars id="toggleIcon" onClick={menuTogle}/>
+
       <div id="menu-overlay">
         <ul>
           <li><a onClick={menuTogle} href="#home">Home</a></li>

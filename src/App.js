@@ -6,12 +6,13 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-        <Header />
+      <Header />
+      <div className="sections"> 
         <Home />
         <a href="#about-me">
           <div className="scroll-down"></div>
@@ -21,6 +22,7 @@ function App() {
         <Projects />
         <Contact />
         <Footer />
+      </div>
     </div>
   );
 }
