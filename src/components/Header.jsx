@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import logoName from '../assets/images/logoN.png';
 import logotipo from '../assets/images/logotype.png';
-import {AiOutlineClose} from 'react-icons/ai'
-import {FaBars} from 'react-icons/fa'
+// import {AiOutlineClose} from 'react-icons/ai'
+// import {FaBars} from 'react-icons/fa'
 import '../styles/Header.scss';
+import Burger from './Burger';
 
 export default function Header() {
 const [showHeader, setShowHeader] = useState(false);
@@ -16,14 +17,11 @@ const changeBackground = () => {
   }
 }
 
-const menuTogle = () => {
-  const nav = document.getElementById('menu-overlay');
-  nav.classList.toggle('active')
-}
-
-// useEffect(() => {
-//   changeBackground()
-// }, [])
+// const menuToggle = () => {
+//   const nav = document.getElementById('menu-overlay');
+//   nav.classList.toggle('active')
+//   // console.log(nav.classList.value)
+// }
 
 window.addEventListener('scroll' ,changeBackground)
 
@@ -43,18 +41,18 @@ window.addEventListener('scroll' ,changeBackground)
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#contact">Contato</a></li>
       </ul>
-      <AiOutlineClose id="toggleIcon" onClick={menuTogle}/>
-      <FaBars id="toggleIcon" onClick={menuTogle}/>
+      <Burger />
+      {/* <FaBars className="toggleIcon" onClick={menuTogle}/> */}
 
-      <div id="menu-overlay">
+      {/* <div id="menu-overlay">
         <ul>
-          <li><a onClick={menuTogle} href="#home">Home</a></li>
-          <li><a onClick={menuTogle} href="#about-me">Sobre mim</a></li>
-          <li><a onClick={menuTogle} href="#skills">Skills</a></li>
-          <li><a onClick={menuTogle} href="#projects">Projetos</a></li>
-          <li><a onClick={menuTogle} href="#contact">Contato</a></li>
+          <li><a onClick={menuToggle} href="#home">Home</a></li>
+          <li><a onClick={menuToggle} href="#about-me">Sobre mim</a></li>
+          <li><a onClick={menuToggle} href="#skills">Skills</a></li>
+          <li><a onClick={menuToggle} href="#projects">Projetos</a></li>
+          <li><a onClick={menuToggle} href="#contact">Contato</a></li>
         </ul>
-      </div>
+      </div> */}
     </header>
   )
 }

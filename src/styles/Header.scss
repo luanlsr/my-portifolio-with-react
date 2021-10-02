@@ -118,14 +118,42 @@
 
 #toggleIcon {
   position: fixed;
-  display: none;
-  top: 20px;
-  right: 20px;
+  display: block;
+  top: 65px;
+  right: 65px;
   width: 50px;
   height: 50px;
-  /* background-color: #ff0; */
   z-index: 1;
   cursor: pointer;
+}
+
+#icon {
+  width: 50px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-sizing: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all .5s ease-in-out;
+}
+
+#icon::before,
+#icon::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-sizing: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all .5s ease-in-out;
+}
+
+#icon::before {
+  transform: translateY(-16px);
+}
+
+#icon::after {
+  transform: translateY(16px);
 }
 
 @media screen and (max-width: 1200px) {

@@ -1,7 +1,6 @@
 .contact {
   background-color: #4E15BE;
   color: white;
-  /* height: 100vh; */
   width: 100%;
 }
 
@@ -75,7 +74,7 @@
   height: 60px;
   margin-bottom: 16px;
   padding-left: 16px;
-  width: 500px;
+  width: 300px;
 }
 
 .email {
@@ -89,7 +88,7 @@
   height: 60px;
   margin-bottom: 16px;
   padding-left: 16px;
-  width: 500px;
+  width: 300px;
 }
 
 .subject {
@@ -103,7 +102,7 @@
   height: 60px;
   margin-bottom: 16px;
   padding-left: 16px;
-  width: 500px;
+  width: 300px;
 }
 
 .message {
@@ -117,7 +116,7 @@
   height: 100px;
   margin-bottom: 16px;
   padding: 6px 16px;
-  width: 500px;
+  width: 300px;
 }
 
 .submit {
@@ -131,10 +130,33 @@
   height: 60px;
   margin-bottom: 16px;
   transition: all ease-in-out 0.2s;
-  width: 500px;
+  width: 300px;
 }
 
 .submit:hover {
   background-color: #21717A;
   color: white;
+}
+
+@media screen and (min-width: 1200px) {
+
+  .name {
+    width: 500px;
+  }
+  
+  .email {
+    width: 500px;
+  }
+  
+  .subject {
+    width: 500px;
+  }
+  
+  .message {
+    width: 500px;
+  }
+  
+  .submit {
+    width: 500px;
+  }  
 }
