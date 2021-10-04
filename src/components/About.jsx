@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/About.css'
-import Skills from './Skills';
+// import Skills from './Skills';
 export default function About() {
   return (
     <div className="about-container" id="about-me">
