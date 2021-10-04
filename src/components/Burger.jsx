@@ -17,6 +17,13 @@ export default function Burger() {
   flex-flow: column nowrap;
   cursor: pointer;
   z-index: 20;
+  display: none;
+
+  @media(max-width: 1200px) {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+  }
 
   div {
     width: 3rem;

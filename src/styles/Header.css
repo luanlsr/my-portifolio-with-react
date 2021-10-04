@@ -1,0 +1,190 @@
+.header-container {
+  align-items: center;
+  animation: ease-in 0.3s;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  height: 136px;
+  padding: 26px;
+  position: fixed;
+  transition: all 0.5s ease;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-container > .menu a{
+  color: white;
+}
+
+.header-container.active {
+  background-color: #111;
+  color: white;
+  height: 120px ;
+  opacity: 0.9;
+}
+
+.header-container.active >.menu a:hover {
+  color: rgb(127, 255, 212);
+}
+
+.header-container.active > .logo-container {
+  height: 120px;
+}
+
+.header-container.active > .menu a {
+  /* background-color: #111; */
+  color: white;
+}
+
+.logo-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container p {
+  text-shadow: 2px 2px 10px black;
+}
+
+.logoTipo {
+  position: relative;
+  animation: gira 8s linear infinite; 
+}
+
+@keyframes gira {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+  list-style: none;
+}
+
+.menu a {
+  color: white;
+  font-size: 20px;
+  margin-right: 26px;
+  text-decoration: none;
+  text-shadow: 2px 2px 10px black;
+}
+
+.menu a:hover{
+  color: rgb(127, 255, 212);
+}
+
+#menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+#menu-overlay.active {
+  transform: scale(1);
+}
+
+
+#menu-overlay ul {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  display: block;
+  margin-top: 100px;
+}
+
+#menu-overlay ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 3em;
+  color: #fff;
+  padding: 16px 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+#menu-overlay ul li a:hover {
+    color: aquamarine;
+}
+
+#toggleIcon {
+  position: fixed;
+  display: block;
+  top: 65px;
+  right: 65px;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#icon {
+  width: 50px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-sizing: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all .5s ease-in-out;
+}
+
+#icon::before,
+#icon::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-sizing: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all .5s ease-in-out;
+}
+
+#icon::before {
+  transform: translateY(-16px);
+}
+
+#icon::after {
+  transform: translateY(16px);
+}
+
+@media screen and (max-width: 1200px) {
+
+  .logo-container {
+    position: absolute;
+    left: 30px;
+  }
+
+  .logo-container p {
+    font-size: 14px;
+    width: 250px;
+  }
+
+  .logoName {
+    width: 180px;
+  }
+
+  .logoTipo {
+    width: 50px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  #toggleIcon {
+    display: block;
+  }
+}

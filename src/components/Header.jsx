@@ -3,7 +3,7 @@ import logoName from '../assets/images/logoN.png';
 import logotipo from '../assets/images/logotype.png';
 // import {AiOutlineClose} from 'react-icons/ai'
 // import {FaBars} from 'react-icons/fa'
-import '../styles/Header.scss';
+import '../styles/Header.css';
 import Burger from './Burger';
 
 export default function Header() {
