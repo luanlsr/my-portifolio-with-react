@@ -1,13 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../styles/Skills.css';
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 export default function Skills() {
+  useEffect(() => {
+    Aos.init()
+  }, [])
   return (
     <div className="skills" id="skills">
       <div className="skills-content">
-        <h1>Skills</h1>
+        <h1 data-aos="slide-right" data-aos-offset="50" data-aos-easing="ease-in-out-sine" data-aos-duration="2000">Skills</h1>
         <div className="list-skills">
-          <ul className="frontend-skills">
+          <ul className="frontend-skills" data-aos="zoom-in-down" data-aos-offset="4" data-aos-easing="ease-in-out-sine" data-aos-duration="2000">
             <h2>FRONT-END</h2>
             <li><h3>HTML5</h3><span className="bar"><span className="html5"></span></span></li>
             <li><h3>CSS</h3><span className="bar"><span className="css" ></span></span></li>
@@ -19,7 +24,7 @@ export default function Skills() {
             <li><h3>Bootstrap</h3><span className="bar"><span className="bootstrap" ></span></span></li>
             <li><h3>Materialize</h3><span className="bar"><span className="materialize" ></span></span></li>
           </ul>
-          <ul className="backend-skills">
+          <ul className="backend-skills" data-aos="zoom-in-down" data-aos-offset="4" data-aos-easing="ease-in-out-sine" data-aos-duration="2000">
           <h2>BACK-END</h2>
             <li><h3>NodeJs</h3><span className="bar"><span className="nodejs" ></span></span></li>
             <li><h3>MySQL</h3><span className="bar"><span className="mysql" ></span></span></li>
@@ -30,7 +35,7 @@ export default function Skills() {
             <li><h3>PHP</h3><span className="bar"><span className="php" ></span></span></li>
             <li><h3>Laravel</h3><span className="bar"><span className="laravel" ></span></span></li>
           </ul>
-          <ul className="other-skills">
+          <ul className="other-skills" data-aos="zoom-in-down" data-aos-offset="4" data-aos-easing="ease-in-out-sine" data-aos-duration="2000">
           <h2>OTHER SKILLS</h2>
             <li><h3>Jest</h3><span className="bar"><span className="jest" ></span></span></li>
             <li><h3>Mocha Chai</h3><span className="bar"><span className="mochachai" /></span></li>

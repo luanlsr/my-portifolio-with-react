@@ -9,6 +9,8 @@ import Contact from './components/Contact';
 import './App.scss';
 
 function App() {
+
+
   return (
     <div className="App">
       <Header />
@@ -24,6 +26,7 @@ function App() {
         <Footer />
       </div>
     </div>
+    
   );
 }
 

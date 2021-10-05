@@ -50,7 +50,7 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   /* overflow: hidden; */
-  box-shadow: 0 0 10px #2187e7b3;
+  box-shadow: 0 0 10px rgb(41, 163, 122);
   width: 500px;
 }
 
