@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 160px;
+  padding: 120px;
 }
 
 .contact-content h1 {
@@ -46,6 +46,11 @@
   margin: 0 16px;
 }
 
+.whatsapp {
+  color: white;
+  margin: 0 16px;
+}
+
 .github:hover {
   color: aquamarine;
 }
@@ -58,6 +63,10 @@
   color: aquamarine;
 }
 
+.whatsapp:hover {
+  color: aquamarine;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -66,7 +75,7 @@
 .name {
   align-items: center;
   background-color: transparent;
-  border: 5px solid aquamarine;
+  border: 1px solid aquamarine;
   border-radius: 8px;
   color: white;
   font-size: 20px;
@@ -80,7 +89,7 @@
 .email {
   align-items: center;
   background-color: transparent;
-  border: 5px solid aquamarine;
+  border: 1px solid aquamarine;
   border-radius: 8px;
   color: white;
   font-size: 20px;
@@ -94,7 +103,7 @@
 .subject {
   align-items: center;
   background-color: transparent;
-  border: 5px solid aquamarine;
+  border: 1px solid aquamarine;
   border-radius: 8px;
   color: white;
   font-size: 20px;
@@ -108,7 +117,7 @@
 .message {
   align-items: center;
   background-color: transparent;
-  border: 5px solid aquamarine;
+  border: 1px solid aquamarine;
   border-radius: 8px;
   color: white;
   font-size: 20px;
@@ -140,7 +149,7 @@
 
 @media screen and (min-width: 1200px) {
 
-  .name {
+    .name {
     width: 500px;
   }
   

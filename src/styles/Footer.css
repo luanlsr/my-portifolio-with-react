@@ -1,7 +1,7 @@
 .footer {
   align-items: center;
-  background-color: #111;
-  color: white;
+  background-color: aquamarine;
+  color: #111;
   display: flex;
   flex-wrap: wrap;
   height: 100px;

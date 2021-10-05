@@ -1,7 +1,7 @@
 .skills {
   background-color: #111;
   color: white;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 }
 
@@ -11,7 +11,6 @@
 
 .skills-content h1 {
   font-size: 2.5em;
-  margin: 0;
   padding: 0;
 }
 
@@ -20,4 +19,427 @@
   margin: 20px 0 0;
   padding: 0;
   text-align: justify;
+}
+
+.list-skills {
+  display: flex;
+  text-align: left;
+  margin: 60px auto;
+  flex-wrap: wrap;
+}
+
+.list-skills h2 {
+  text-align: center;
+}
+
+.list-skills ul {
+  display: flexbox;
+  list-style: none;
+  margin: auto;
+}
+
+.list-skills li{
+  margin: 15px;
+}
+
+
+.bar {
+  background-color: #353b48;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  /* overflow: hidden; */
+  box-shadow: 0 0 10px #2187e7b3;
+  width: 500px;
+}
+
+.bar span {
+  height: 2px;
+  float: left;
+  background-color: aquamarine;
+}
+
+.html5 {
+  width: 90%;
+  animation: html 2s;
+}
+
+.css {
+  width: 80%;
+  animation: css 2s;
+}
+
+.javascript {
+  width: 70%;
+  animation: javascript 2s;
+}
+
+.typescript {
+  width: 60%;
+  animation: typescript 2s;
+}
+
+.react {
+  width: 70%;
+  animation: react 2s;
+}
+
+.redux {
+  width: 70%;
+  animation: redux 2s;
+}
+
+.sass {
+  width: 50%;
+  animation: sass 2s;
+}
+
+.bootstrap {
+  width: 50%;
+  animation: bootstrap 2s;
+}
+
+.materialize {
+  width: 50%;
+  animation: materialize 2s;
+}
+
+.nodejs {
+  width: 70%;
+  animation: nodejs 2s;
+}
+
+.mysql {
+  width: 80%;
+  animation: mysql 2s;
+}
+
+.mongodb {
+  width: 80%;
+  animation: mongodb 2s;
+}
+
+.express {
+  width: 70%;
+  animation: express 2s;
+}
+
+.pm2 {
+  width: 70%;
+  animation: pm2 2s;
+}
+
+.python {
+  width: 10%;
+  animation: python 2s;
+}
+
+.php {
+  width: 10%;
+  animation: php 2s;
+}
+
+.laravel {
+  width: 10%;
+  animation: laravel 2s;
+}
+
+.jest {
+  width: 70%;
+  animation: jest 2s;
+}
+
+.mochachai {
+  width: 60%;
+  animation: mochachai 2s;
+}
+
+.sinon {
+  width: 60%;
+  animation: sinon 2s;
+}
+
+.figma {
+  width: 50%;
+  animation: figma 2s;
+}
+
+.docker {
+  width: 30%;
+  animation: docker 2s;
+}
+
+.firebase {
+  width: 20%;
+  animation: firebase 2s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes typescript {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes redux {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes sass {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes bootstrap {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes materialize {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes nodejs {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes mysql {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes mongodb {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes express {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes pm2 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 10%;
+  }
+}
+
+@keyframes php {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 10%;
+  }
+}
+
+@keyframes laravel {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 10%;
+  }
+}
+
+@keyframes jest {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes mochachai {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes sinon {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes figma {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes docker {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes firebase {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1771.5px) {
+  .skills {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .skills {
+    height: 160vh;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .skills {
+    height: 160vh;
+  }
+
+  .skills-content {
+    text-align: center;
+    padding: 30px 80px;
+  }
+
+  .skills-content h1 {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .bar {
+    width: 300px;
+  }
+
+  .list-skills h2 {
+    margin-top: 30px;
+  }
 }

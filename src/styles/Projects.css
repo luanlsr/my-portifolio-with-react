@@ -1,5 +1,5 @@
 .projects {
-  height: 100vh;
+  height: 75vh;
   width: 100%;
 }
 
@@ -18,4 +18,10 @@
   margin: 20px 0 0;
   padding: 0;
   text-align: justify;
+}
+
+@media screen and (max-width: 1200px) {
+    .projects-content {
+    padding: 30px 80px;
+  }
 }
