@@ -31,15 +31,31 @@
   text-align: justify;
 }
 
+.linkedinButton {
+  margin-top: 20px;
+  font-size: 18px;
+  border: transparent;
+  background-color: aquamarine;
+  font-weight: 800;
+  height: 60px;
+  cursor: pointer;
+  width: 180px;
+}
+
+.linkedinButton:hover{
+  background-color: rgb(66, 245, 185);
+}
+
 @media screen and (max-width: 1200px) {
   
   .about-container {
-    height: 120vh;
+    height: 200vh;
     padding: 90px 50px;
   }
 
   .about-container h1 {
     font-size: 36px;
+    text-align: center;
   }
 }
 
