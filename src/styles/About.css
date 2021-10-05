@@ -46,16 +46,40 @@
   background-color: rgb(66, 245, 185);
 }
 
+@media screen and (max-width: 1366px) {
+  
+  .about-container {
+    height: 90vh;
+    padding: 90px 50px;
+  }
+}
+
+@media screen and (max-height: 768px) {
+  
+  .about-container {
+    height: 95vh;
+    padding: 90px 50px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   
   .about-container {
-    height: 200vh;
+    height: 100vh;
     padding: 90px 50px;
   }
 
   .about-container h1 {
     font-size: 36px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+  .about-container {
+    height: 150vh;
+    padding: 90px 50px;
   }
 }
 
