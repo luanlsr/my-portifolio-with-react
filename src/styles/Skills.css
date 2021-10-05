@@ -453,6 +453,10 @@
 
 @media screen and (max-width: 550px) {
 
+  .skills h1 {
+    padding-top: 80px;
+  }
+
   .bar {
     max-width: 170px;
   }

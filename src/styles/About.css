@@ -34,8 +34,8 @@
 @media screen and (max-width: 1200px) {
   
   .about-container {
-    height: 100vh;
-    padding: 30px 80px;
+    height: 120vh;
+    padding: 90px 50px;
   }
 
   .about-container h1 {

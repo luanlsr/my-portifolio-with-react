@@ -162,6 +162,11 @@
 
 @media screen and (max-width: 1200px) {
 
+  .header-container.active {
+    height: 90px;
+    padding-top: 50px;
+  }
+
   .logo-container {
     position: absolute;
     left: 30px;

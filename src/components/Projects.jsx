@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <div className="projects" id="projects">
       <div className="projects-content">
-        <h1 data-aos="slide-right" data-aos-offset="50" data-aos-easing="ease-in-out-sine" data-aos-duration="2000">Projetos</h1>
+        <h1 data-aos="zoom-in-up" data-aos-offset="50" data-aos-easing="ease-in-out-sine" data-aos-duration="2000">Projetos</h1>
       </div>
     </div>
   )

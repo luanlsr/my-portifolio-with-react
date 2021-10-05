@@ -22,6 +22,11 @@
 
 @media screen and (max-width: 1200px) {
     .projects-content {
+    height: 180vh;
     padding: 30px 80px;
+  }
+
+  .projects-content h1 {
+    padding-top: 90px;
   }
 }
