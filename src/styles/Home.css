@@ -28,6 +28,16 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1600px) {
+  .meeting p {
+    font-size: 0.8em;
+  }
+
+  .meeting h1 {
+    font-size: 1.4em;
+  }
+}
+
 @media screen and (max-width: 1200px) {
 
   .img {
@@ -46,5 +56,12 @@
 
   .meeting h1 {
     font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 760px) {
+
+    .meeting h1 {
+    font-size: 1.6em;
   }
 }
