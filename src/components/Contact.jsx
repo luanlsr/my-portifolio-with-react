@@ -53,7 +53,7 @@ export default function Contact() {
           <input className="subject" required type="text" name="subject" />
           <label className="label-message" >Messagem</label>
           <textarea className="message" required name="message" />
-          <input data-aos="zoom-out-up" data-aos-offset="50" data-aos-easing="ease-in-out-sine" data-aos-duration="2000" className="submit" type="submit" value="Enviar" />
+          <input data-aos-offset="50" data-aos-easing="ease-in-out-sine" data-aos-duration="2000" className="submit" type="submit" value="Enviar" />
         </form>
         {sentEmail ? <Result /> : null}
       </section>

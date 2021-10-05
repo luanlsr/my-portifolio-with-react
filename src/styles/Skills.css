@@ -413,7 +413,7 @@
 
 @media screen and (max-width: 1600px) {
   .skills {
-    height: 160vh;
+    height: 155vh;
   }
 
 }
@@ -435,11 +435,25 @@
 }
 
 @media screen and (max-width: 800px) {
+
+  .skills {
+    height: 220vh;
+    display: flex;
+    justify-content: center;
+  }
+
   .bar {
     width: 300px;
   }
 
   .list-skills h2 {
     margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .bar {
+    max-width: 170px;
   }
 }
